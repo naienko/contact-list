@@ -19,10 +19,20 @@ const API = {
         })
             .then(res => res.json());
     },
-    deleteContact: (contactId) => {
+    deleteContact: contactId => {
         return fetch(`http://127.0.0.1:8088/contacts/${contactId}`, {
                 method: "DELETE"
         })
+    },
+    editContact: (contactObject, contactId) => {
+        return fetch(`http://127.0.0.1:8088/contacts/${contactId}`, {
+            method: "PUT",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(contactObject)
+        })
+            .then(res => res.json());
     }
 };
 
