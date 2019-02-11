@@ -5,9 +5,10 @@
 */
 
 const createContactCard = contactElement => {
-    return `<section><h3>${contactElement.name}</h3>
+    return `<section id="contactCard"><h3>${contactElement.name}</h3>
     <div>${contactElement.address}</div>
     <div>${contactElement.phone}</div>
+    <button id="deletebutton--${contactElement.id}">delete</button>
     </section>`;
 };
 

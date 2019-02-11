@@ -5,11 +5,13 @@
  */
 
 import createContactCard from "./contact.js";
-import getContacts from "./contactCollection.js";
+import API from "./contactCollection";
 
 const createContactList = () => {
     const listEl = document.querySelector("#contactDisplay");
-    getContacts().then(
+    listEl.innerHTML = "";
+    API.getContacts()
+    .then(contactArray =>
         contactArray.forEach(element => {
             listEl.innerHTML += createContactCard(element);
         })

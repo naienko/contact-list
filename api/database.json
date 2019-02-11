@@ -1,3 +1,28 @@
 {
-  "contacts": []
+  "contacts": [
+    {
+      "name": "Barry Allen",
+      "address": "234 Heartthrob Ln\nCentral City",
+      "phone": "324-234-4656",
+      "id": 1
+    },
+    {
+      "name": "Summer Rainault",
+      "address": "2374 Grope St\nCentral City",
+      "phone": "555-234-1289",
+      "id": 3
+    },
+    {
+      "name": "Sebastien St Cyr",
+      "address": "221-B N 51st St\nNew York City",
+      "phone": "234-234-7564",
+      "id": 4
+    },
+    {
+      "name": "Autumn Rainault",
+      "address": "902 Broad Blvd\nCentral City",
+      "phone": "234-123-6453",
+      "id": 5
+    }
+  ]
 }
