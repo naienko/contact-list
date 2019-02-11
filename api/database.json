@@ -2,7 +2,7 @@
   "contacts": [
     {
       "name": "Barry Allen",
-      "address": "234 Heartthrob Ln\nCentral City",
+      "address": "234 Heartthrob Ln\nCentral City IN",
       "phone": "324-234-4656",
       "id": 1
     },
@@ -14,7 +14,7 @@
     },
     {
       "name": "Sebastien St Cyr",
-      "address": "221-B N 51st St\nNew York City",
+      "address": "221-B N 51st St\nNew York City NY",
       "phone": "234-234-7564",
       "id": 4
     },

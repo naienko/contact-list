@@ -9,13 +9,14 @@
 <body>
 	<nav></nav>
 	
-	<header id="contactEntryForm">
+	<header id="contactEntryForm" class="">
+		<input type="hidden" id="contactID" value="">
 		<label for="contactName">Contact Name:</label>
 			<input type="text" name="contactName" id="contactName" /><br />
 		<label for="contactAddress">Contact Address:</label>
 			<textarea name="contactAddress" id="contactAddress" cols="50" rows="3" placeholder="(include City, State Abbreviation, and Zip Code)"></textarea><br />
 		<label for="contactPhone">Contact Phone:</label>
-			<input type="tel" name="contactPhone" id="contactPhone" /><br />
+			<input type="tel" name="contactPhone" id="contactPhone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" /><br />
 		<button id="addNewContact">Submit</button>
 	</header>
 	

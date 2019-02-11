@@ -12,8 +12,22 @@ const createContactObject = () => {
     contactObject.name = document.querySelector("#contactName").value;
     contactObject.address = document.querySelector("#contactAddress").value;
     contactObject.phone = document.querySelector("#contactPhone").value;
+    const contactID = document.querySelector("#contactID").value;
+    if (contactID !== "") {
+        API.editContact(contactObject, contactID)
+        .then(
+            () => {
+                createContactList();
+                document.querySelector("#contactName").value = "";
+                document.querySelector("#contactAddress").value = "";
+                document.querySelector("#contactPhone").value = "";
+                document.querySelector("#contactID").value = "";
+                document.querySelector("#addNewContact").textContent = "Submit";
+            });
+    } else {
     API.createContacts(contactObject)
-        .then(createContactList);
+    .then(createContactList);
+    }
 };
 
 export default createContactObject;
